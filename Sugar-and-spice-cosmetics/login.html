@@ -26,22 +26,35 @@
                       <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="login" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="register.html">Register</a>
+                      <a class="nav-link active" href="login.html">Login/Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="products.html">Products</a>
                     </li>
-                    <li class="nav-item"></li>
+                    <li class="nav-item">
                         <a class="nav-link" href="checkout.html">Checkout</a>
                     </li>
                   </ul>
             </div>
           </div>
         </nav>
-        <form action="action_page.php"
-        
+
+        <div class="login-form">
+        <h1>Login</h1>
+        <form></form>
+            <input class="form-control" type="text" placeholder="Username" aria-label="Username" minlength="3" maxlength="50">
+            <input class="form-control" type="password" placeholder="Password" aria-label="Password" minlength="8" maxlength="20">
+    
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+                <a href="#">Forgot password?</a>
+    
+                </div>
+    
+                <div class="register-link">
+                    <p>Don't have an account? <a href="register.html">Register</a></p>
+                </div>
     </header>
 </body>

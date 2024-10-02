@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(248, 220, 220);
+    margin: 0;
+    padding: 1rem;
+    font-family: sans-serif;
+   
+}
+.btn {
+    background-color: rgb(252, 114, 137);
+}
+
+.card-img-top{
+    width:20rem;
+    padding: 2%;
+}
+.card{
+    display: inline-block;
+    text-align: center;
+    width: 20rem;
+}
+.btn{
+    
+}
+
+ 

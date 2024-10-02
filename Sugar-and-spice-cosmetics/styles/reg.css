@@ -1,0 +1,67 @@
+h1 {
+    text-align:left;
+    margin: .95rem;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgb(248, 220, 220);
+    margin: 0;
+    padding: 0%;
+    font-family: sans-serif;
+
+
+}
+nav {
+    width: 100%;
+    background-color: transparent;
+    overflow: auto;
+   font-family: sans-serif;
+}
+nav a {
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: sans-serif
+    
+} 
+nav a:hover {
+    background-color:rgb(245, 228, 234);
+    transition: 0.5s;
+    text-transform:uppercasenone;
+    text-decoration:solid;
+    font-family: sans-serif;
+ 
+}
+input.form-control{
+    width: 19rem;
+    margin: 0.4rem;
+    
+}
+.ul {
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+
+}
+li {
+    float: left;
+    font-family: sans-serif;
+    margin-right: .7rem;
+}
+.registration-form{
+    width: 300px;
+    box-shadow: 0 0 3px ;
+    background: transparent;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+.registration-form input {
+    margin-top: 1rem;
+}
+
+button.signup {
+    background-color:  rgb(252, 114, 137);
+
+}
