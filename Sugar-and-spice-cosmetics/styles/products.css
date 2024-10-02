@@ -18,8 +18,33 @@ body {
     text-align: center;
     width: 20rem;
 }
-.btn{
+.btn:hover{
+    background-color: pink;
     
+}
+nav {
+    width: 100%;
+    background-color: transparent;
+    overflow:auto;
+}
+nav a:hover {
+    background-color:rgb(245, 228, 234);
+    transition: 0.5s;
+    text-transform:none;
+    text-decoration:solid;
+    font-family: sans-serif;
+ 
+}
+.ul {
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+
+}
+li {
+    float: left;
+    font-family: sans-serif;
+    margin-right: .7rem;
 }
 
  

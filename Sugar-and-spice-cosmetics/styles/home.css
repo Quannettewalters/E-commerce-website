@@ -6,7 +6,8 @@ img {
 body {
     background-color: rgb(248, 220, 220);
     margin: 0;
-    padding: 0%;
+    padding: 1rem;
+    font-family: sans-serif;
    
 
 
@@ -33,7 +34,6 @@ li {
     margin-left: 10px;
 }
 nav a {
-    width: 100px;
     display: block;
     padding: 20px 15px;
     text-decoration: none;
@@ -49,3 +49,4 @@ nav a:hover {
 
  
 }
+
