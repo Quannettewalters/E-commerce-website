@@ -63,3 +63,20 @@ button.signup {
 button.submit {
     background-color: rgb(252, 114, 137);
 }
+button.checkout {
+    background-color: rgb(252, 114, 132);
+    margin: 1rem;
+}
+.checkout:hover {
+    background-color: pink;
+}
+table {
+    margin: 1rem;
+    width: 80%;
+    background-color: rgb(246, 237, 240);
+    border: 1px solid rgb(98, 96, 96);
+
+}
+td,th {
+    padding: 0.5rem;
+}
