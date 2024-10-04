@@ -11,7 +11,14 @@ body {
 
 
 }
-
+nav {
+    width: 100%;
+    background-color: transparent;
+    overflow:auto;
+    background-image: url(/Sugar-and-spice-cosmetics/images/logo.png);
+    height: 5rem;
+    
+}
 
 nav a {
     display: block;
@@ -73,7 +80,7 @@ button.checkout {
 table {
     margin: 1rem;
     width: 80%;
-    background-color: rgb(246, 237, 240);
+    background-color:rgb(230, 215, 219);
     border: 1px solid rgb(98, 96, 96);
 
 }

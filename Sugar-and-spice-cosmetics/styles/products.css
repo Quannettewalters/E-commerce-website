@@ -4,7 +4,7 @@ body {
     padding: 1rem;
     font-family: sans-serif;
     background-image: url(/Sugar-and-spice-cosmetics/images/pinkbackground.gif);
-  
+    text-align: center;
    
 }
 .btn {
@@ -28,6 +28,8 @@ nav {
     width: 100%;
     background-color: transparent;
     overflow:auto;
+    background-image: url(/Sugar-and-spice-cosmetics/images/logo.png);
+    height: 5rem;
 }
 nav a:hover {
     background-color:rgb(245, 228, 234);
