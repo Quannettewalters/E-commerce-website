@@ -4,11 +4,11 @@ body {
     padding: 1rem;
     font-family: sans-serif;
     background-image: url(/Sugar-and-spice-cosmetics/images/pinkbackground.gif);
-    text-align: center;
+    background-repeat:repeat;
    
 }
 .btn {
-    background-color: rgb(252, 114, 137);
+    background-color: rgba(252, 114, 137, 0.803);
 }
 
 .card-img-top{
@@ -22,13 +22,11 @@ body {
 }
 .btn:hover{
     background-color: pink;
-    
 }
 nav {
     width: 100%;
-    background-color: transparent;
     overflow:auto;
-    background-image: url(/Sugar-and-spice-cosmetics/images/logo.png);
+    background-color: rgb(241, 159, 173, 0.657);
     height: 5rem;
 }
 nav a:hover {
