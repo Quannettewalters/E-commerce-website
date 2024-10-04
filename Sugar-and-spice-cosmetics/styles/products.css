@@ -5,6 +5,7 @@ body {
     font-family: sans-serif;
     background-image: url(/Sugar-and-spice-cosmetics/images/pinkbackground.gif);
     background-repeat:repeat;
+    text-align: center;
    
 }
 .btn {
@@ -48,5 +49,7 @@ li {
     font-family: sans-serif;
     margin-right: .7rem;
 }
-
-
+.logo {
+    height: 48px;
+    width: auto;
+}
