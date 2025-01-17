@@ -1,7 +1,19 @@
-img {
+/* img {
     height: 200px;
     width:35%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 
+} */
+nav.img2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 120px;    /* Limits the width to a maximum of 120px */
+    height: auto;
+    opacity: 0.7;  /* Adjust value from 0 (fully transparent) to 1 (fully opaque) */
+    transition: opacity 0.3s ease;       /* Automatically adjust the height to maintain aspect ratio */
 }
 /* body {
     background-color: rgb(248, 220, 220);
@@ -13,50 +25,45 @@ img {
     background-size:contain;
     background-position: top;
     margin-bottom: 0%;
-    background-size: cover; */
-   
-
-
-}
-nav {
-    width: 100%;
-    background-color: rgba(241, 159, 173, 0.657);
-    overflow:auto;
-    height: 5rem;
-    position: absolute;
-    
-}
-.ul {
-    padding: 1rem;
-    margin: 1 1 1 150px;
-    list-style: square;
-
-}
-/* li {
-    /* display: block; */
-    margin-right: .7rem;
-    font-family: cursive;
-    text-align: left;
+    background-size: cover;
 } */
-.logo img {
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-nav a {
-    display: block;
-    padding: 20px 15px;
-    text-decoration: none;
-    font-family: sans-serif;
-    color: transparent;
-    text-align: center;
-} 
-nav a:hover {
-    background-color:rgba(245, 228, 234, 0.78);
-    transition: 0.5s;
-    text-transform:none;
-    text-decoration:solid;
-}
+
+    nav {
+        width: 100%;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: rgba(241, 159, 173, 0.657);
+        height: 5rem;
+        position: fixed;
+        
+    }
+    nav a {
+        color: white;
+    }
+    .ul {
+        padding: 1rem;
+        margin: 1 1 1 150px;
+        list-style: square;
+    }
+    li {
+        /* display: block; */
+        margin-right: .7rem;
+        font-family: cursive;
+        text-align: left;
+    }
+    .logo img {
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    nav a:hover {    
+        text-decoration: underline; /* Add underline on hover */
+        text-decoration-color: #FF69B4; /* Bright pink underline color */
+        text-decoration-thickness: 3px; /
+    }
+     
+     
 .flex-wrapper {
     display: flex;
     min-height: 100vh;
@@ -82,7 +89,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(60%);
+    filter: brightness(80%);
   }
   
   .hero .overlay {
@@ -90,7 +97,7 @@ nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffffb9;
+    color: #fffffff6;
     text-align: center;
     padding: 30px;
     background: rgba(8, 6, 6, 0.34);
