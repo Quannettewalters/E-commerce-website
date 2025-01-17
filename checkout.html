@@ -39,102 +39,83 @@
             </div>
           </div>
          </nav>         
-     </header> 
-          <h1>Cart</h1>
-          <div id="cart">
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>Quantity</th>
-                    <th>price</th>
-                    <th>total</th>
-                </tr>
-                <tr>
-                    <th><input type="checkbox" checked="checked" name="select">Sugar Plum Dream</th>
-                    <th>2</th>
-                    <th>19.00</th>
-                    <th>38.00</th>
-                </tr>
-                <tr>
-                    <th><input type="checkbox" checked="checked" name="select">Velvet Cherry</th>
-                    <th>2</th>
-                    <th>17.00</th>
-                    <th>34.00</th>
-                </tr>
-
-                <tr>
-                    <th><input type="checkbox" checked="checked" name="select">Spicy Kiss</th>
-                    <th>1</th>
-                    <th>17.00</th>
-                    <th>17.00</th>
-                </tr>
-                <tr>
-                    <th><input type="checkbox" checked="checked" name="select">Sweet Revenge</th>
-                    <th>3</th>
-                    <th>16.00</th>
-                    <th>48.00</th>
-                </tr>
-                <tr>
-                    <th><input type="checkbox" checked="checked" name="select">Cinnamon Sugar</th>
-                    <th>1</th>
-                    <th>21.00</th>
-                    <th>21.00</th>
-                </tr>
-                <tr>
-                    <th>Total</th>
-                    <th></th>
-                    <th></th>
-                    <th>158.00</th>
-                </tr>
-            </table>
+         <header>
+          <h2>Checkout</h2>
+          <p> ALL PURCHASES ARE FINAL.</p>
+          <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form action="/action_page.php">
+                
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Billing Address</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder="john@example.com">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><i class="fa fa-institution"></i> City</label>
+                      <input type="text" id="city" name="city" placeholder="New York">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="NY">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2029">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                  </label>
+                  <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+              </div>
+            </div>
+            <div class="col-25">
+              <div class="container">
+                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>3</b></span></h4>
+                <p><a href="products.html">Cinnamon Sugar</a> <span class="price">$21</span></p>
+                <p><a href="products.html">Velvet Cherry</a> <span class="price">$17</span></p>
+                <p><a href="products.html">Spicy Kiss</a> <span class="price">$17</span></p>
+                
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>$55</b></span></p>
+              </div>
+            </div>
           </div>
-          <form id="payment-form">
-            <h2>Payment Information</h2>
-            <div class="form-group">
-              <label for="card-number">Card Number:</label>
-              <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
-            </div>
-            <div class="form-group">
-              <label for="exp-month">Expiration Month:</label>
-              <select id="exp-month" name="exp-month" required>
-                <option value="">Select Month</option>
-                <option value="01">January</option>
-                <option value="02">February</option>
-                <option value="03">March</option>
-                <option value="04">April</option>
-                <option value="05">May</option>
-                <option value="06">June</option>
-                <option value="07">July</option>
-                <option value="08">August</option>
-                <option value="09">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exp-year">Expiration Year:</label>
-              <select id="exp-year" name="exp-year" required>
-                <option value="">Select Year</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-                <option value="2028">2028</option>
-                <option value="2029">2029</option>
-                <option value="2030">2030</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="cvv">CVV:</label>
-              <input type="text" id="cvv" name="cvv" placeholder="123" required>
-            </div>
-            <div class="form-group">
-              <label for="cardholder-name">Cardholder Name:</label>
-              <input type="text" id="cardholder-name" name="cardholder-name" placeholder="John Doe" required>
-            </div>
-            <button type="submit">Pay Now</button>
-        </form>
  </body>   
-          /hi 
